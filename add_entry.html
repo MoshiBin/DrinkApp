@@ -1,56 +1,43 @@
 <!doctype html>
 <html lang="he" dir="rtl">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Liat Schulzinger">
-    <title>DrinkUp</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.rtl.min.css" integrity="sha256-OdeNPKevXVrmOEXOLHHReyUxgJPe8GdOhEY4ibamVz4=" crossorigin="anonymous">
-    <!-- Favicons -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕️</text></svg>">
-    <meta name="theme-color" content="#7952b3">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Liat Schulzinger">
+  <title>DrinkUp</title>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.rtl.min.css"
+    integrity="sha256-OdeNPKevXVrmOEXOLHHReyUxgJPe8GdOhEY4ibamVz4=" crossorigin="anonymous">
+  <!-- Favicons -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕️</text></svg>">
+  <meta name="theme-color" content="#7952b3">
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+</head>
 
-  </head>
-  <body class="bg-light">
-    
-<div class="container">
-  <main>
-    <div class="py-3 text-center">
-      <h1>🥃</h1>
-      <h2>DrinkApp</h2>
-    </div>
+<body class="bg-light">
 
-    <div class="row justify-content-center">
+  <div class="container">
+    <main>
+      <div class="py-3 text-center">
+        <h1>🥃</h1>
+        <h2>DrinkApp</h2>
+      </div>
+
+      <div class="row justify-content-center">
         <div class="col-11">
-          <form class="p-2">
-            <div class="mt-3">
+          <form class="row g-3">
+            <div class="col-12">
               <label for="date" class="form-label">מתי שתיתי?</label>
               <input type="datetime-local" dir="ltr" class="form-control text-left">
             </div>
 
-
-            <div class="row mt-3">
+            <div class="col-12">
               <label for="drinkType" class="form-label">מה שתיתי?</label>
             </div>
-            <div class="input-group">
+            <div class="input-group col-12">
               <input type="radio" class="btn-check" name="drinkType" id="water" autocomplete="off" checked>
               <label class="btn btn-secondary" for="water">מים</label>
               <input type="radio" class="btn-check" name="drinkType" id="coffee" autocomplete="off">
@@ -61,10 +48,10 @@
               <label class="btn btn-secondary" for="soda">מוגז</label>
             </div>
 
-            <div class="row mt-3">
+            <div class="col-12">
               <label for="drinkType" class="form-label">באיזה כלי?</label>
             </div>
-            <div class="input-group">
+            <div class="input-group col-12">
               <input type="radio" class="btn-check" name="drinkType" id="plastic" autocomplete="off" checked>
               <label class="btn btn-secondary" for="plastic">פלסטיק</label>
               <input type="radio" class="btn-check" name="drinkType" id="mug" autocomplete="off">
@@ -75,192 +62,22 @@
               <label class="btn btn-secondary" for="bottle">בקבוק</label>
             </div>
 
-            <div class="input-group">
-              <button type="submit" class="btn btn-primary">שלח</button>
+            <div class="col-12 d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">שלח</button>
             </div>
           </form>
         </div>
-
-
-        <!--
-        <div class="row my-10">
-
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="رمز ترويجي">
-            <button type="submit" class="btn btn-secondary">افتدى</button>
-          </div>
-        </form>
       </div>
-      <div class="col-md-7 col-lg-8">
-        <h4 class="mb-3">عنوان وصول الفواتير</h4>
-        <form class="needs-validation" novalidate>
-          <div class="row g-3">
-            <div class="col-sm-6">
-              <label for="firstName" class="form-label">الاسم الاول</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                مطلوب الاسم الأول صالح.
-              </div>
-            </div>
+    </main>
 
-            <div class="col-sm-6">
-              <label for="lastName" class="form-label">الكنية</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                مطلوب اسم أخير صالح.
-              </div>
-            </div>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2021 ליאת שולזינגר</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">פרטיות</a></li>
+        <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">צרו קשר</a></li>
+        <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">אודות</a></li>
+      </ul>
+    </footer>
+</body>
 
-            <div class="col-12">
-              <label for="username" class="form-label">اسم المستخدم</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text">@</span>
-                <input type="text" class="form-control" id="username" placeholder="اسم المستخدم" required>
-              <div class="invalid-feedback">
-                اسم المستخدم الخاص بك مطلوب.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <label for="email" class="form-label"><span class="text-muted">(اختياري)</span>البريد الإلكتروني </label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
-              <div class="invalid-feedback">
-                يرجى إدخال عنوان بريد إلكتروني صالح لتحديثات الشحن.
-              </div>
-            </div>
-
-            <div class="col-12">
-              <label for="address" class="form-label">عنوان</label>
-              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-              <div class="invalid-feedback">
-                يرجى إدخال عنوان الشحن الخاص بك.
-              </div>
-            </div>
-
-            <div class="col-12">
-              <label for="address2" class="form-label"><span class="text-muted">(اختياري)</span>عنوان 2 </label>
-              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-            </div>
-
-            <div class="col-md-5">
-              <label for="country" class="form-label">بلد</label>
-              <select class="form-select" id="country" required>
-                <option value="">أختر...</option>
-                <option>الولايات المتحدة الأمريكية</option>
-              </select>
-              <div class="invalid-feedback">
-                يرجى تحديد بلد صالح.
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <label for="state" class="form-label">حالة</label>
-              <select class="form-select" id="state" required>
-                <option value="">أختر...</option>
-                <option>كاليفورنيا</option>
-              </select>
-              <div class="invalid-feedback">
-                يرجى تقديم حالة صالحة.
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <label for="zip" class="form-label">الرمز البريدي</label>
-              <input type="text" class="form-control" id="zip" placeholder="" required>
-              <div class="invalid-feedback">
-                الرمز البريدي مطلوب.
-              </div>
-            </div>
-          </div>
-
-          <hr class="my-4">
-
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="same-address">
-            <label class="form-check-label" for="same-address">عنوان الشحن هو نفس عنوان الفاتورة الخاص بي</label>
-          </div>
-
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="save-info">
-            <label class="form-check-label" for="save-info">احفظ هذه المعلومات في المرة القادمة</label>
-          </div>
-
-          <hr class="my-4">
-
-          <h4 class="mb-3">دفع</h4>
-
-          <div class="my-3">
-            <div class="form-check">
-              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-              <label class="form-check-label" for="credit">بطاقة الائتمان</label>
-            </div>
-            <div class="form-check">
-              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-              <label class="form-check-label" for="debit">بطاقة ائتمان</label>
-            </div>
-            <div class="form-check">
-              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-              <label class="form-check-label" for="paypal">PayPal</label>
-            </div>
-          </div>
-
-          <div class="row gy-3">
-            <div class="col-md-6">
-              <label for="cc-name" class="form-label">الاسم على البطاقة</label>
-              <input type="text" class="form-control" id="cc-name" placeholder="" required>
-              <small class="text-muted">الاسم الكامل كما هو معروض على البطاقة</small>
-              <div class="invalid-feedback">
-                الاسم على البطاقة مطلوب
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <label for="cc-number" class="form-label">رقم بطاقه الائتمان</label>
-              <input type="text" class="form-control" id="cc-number" placeholder="" required>
-              <div class="invalid-feedback">
-                رقم بطاقة الائتمان مطلوب
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <label for="cc-expiration" class="form-label">انتهاء الصلاحية</label>
-              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-              <div class="invalid-feedback">
-                تاريخ انتهاء الصلاحية مطلوب
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <label for="cc-cvv" class="form-label">CVV</label>
-              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-              <div class="invalid-feedback">
-                رمز الحماية مطلوب
-              </div>
-            </div>
-          </div>
-
-          <hr class="my-4">
-
-          <button class="w-100 btn btn-primary btn-lg" type="submit">الاستمرار في الخروج</button>
-        </form>
-      </div>
-    </div>
-  </main>
-  <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2021-2017 اسم الشركة</p>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a href="#">خصوصية</a></li>
-      <li class="list-inline-item"><a href="#">شروط</a></li>
-      <li class="list-inline-item"><a href="#">الدعم</a></li>
-    </ul>
-  </footer>
-</div>
-
-
-    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
-      <script src="../checkout/form-validation.js"></script>
-  </body>
 </html>
-

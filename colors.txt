@@ -1,0 +1,11 @@
+yellow
+#FFE1B6
+
+beige
+#F9F8EB
+
+light blue
+#7A9EB1
+
+dark blue
+#415865
